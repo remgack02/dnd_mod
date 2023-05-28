@@ -15,8 +15,8 @@ public class ModCreativeModeTabs {
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        TUTORIAL_TAB = event.registerCreativeModeTab(new ResourceLocation(DndMod.MOD_ID, "tutorial_tab"),
+        TUTORIAL_TAB = event.registerCreativeModeTab(new ResourceLocation(DndMod.MOD_ID, "dnd_tab"),
                 builder -> builder.icon(() -> new ItemStack(ModItems.BLACK_OPAL.get()))
-                        .title(Component.translatable("creativemodetab.tutorial_tab")));
+                        .title(Component.translatable("creativemodetab.dnd_tab")));
     }
 }
